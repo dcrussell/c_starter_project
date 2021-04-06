@@ -32,7 +32,7 @@ build:
 # The unit tests
 .PHONY: tests
 tests: $(TESTS)
-	sh ./test/runtests.sh
+	sh ./test/runtests.sh $(TEST)
 $(TESTS):
 	$(CC) $(CFLAGS) $@.c $(TARGET) -o $@
 
